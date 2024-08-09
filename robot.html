@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movement Control Panel</title>
+  <link rel="stylesheet" href="styControl.css">
+  <link rel="icon" type="image/png" href="/robot/Myicon.png">
+</head>
+<body>
+  <div class="container">
+    <h1>Movement Control Panel</h1>
+    <div class="buttons-container">
+      <form action="index.php" method="post">
+        <button class="button stop" type="submit" name="button" value="Stop">■</button>
+        <button class="button forward" type="submit" name="button" value="Forward">↑</button>
+        <button class="button left" type="submit" name="button" value="Left">←</button>
+        <button class="button right" type="submit" name="button" value="Right">→</button>
+        <button class="button backward" type="submit" name="button" value="Backward">↓</button>
+      </form>
+      <a href="last_value.php" class="button view-last">Last Direction</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+  background: #100a1c;
+  background-image:
+    radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
+  color: #e9eff1;
+  font: 300 18px/1.6 "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 5em 0 2em;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
+}
+h1 {
+  font-weight: 300;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+.direction-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.buttons-container {
+  position: relative;
+  margin-bottom: 3em; 
+  width: 15em;
+  height: 15em;
+}
+.button {
+  position: absolute;
+  cursor: pointer;
+  background-color: #2b265a47;
+  color: #e7edf0;
+  border: none;
+  border-radius: 50%; 
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px;
+}
+.button.stop {
+  background-color: #90605d;
+  color: #0f081c;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  box-shadow: 0 4px 8px #00000066;
+}
+.button.stop:hover {
+  background-color: #973f3a;
+}
+.button.forward {
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button.left {
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+}
+.button.right {
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
+}
+.button.backward {
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button.forward:hover,
+.button.backward:hover,
+.button.left:hover,
+.button.right:hover {
+  background-color: #86708d47;
+}
+.button.view-last {
+  background-color: rgba(183, 183, 183, 0.10);
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 0px 45px;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  white-space: nowrap; 
+  top: 100%;
+  right: 170%;
+  box-shadow: 0 0 5px #c0c0c19c;
+}
+.button.view-last:hover {
+  background-color: #f0f0f0; 
+  color: #000000;
+  box-shadow: 0 0 15px #ffffff; 
+}
+.button.back-to-control {
+  background-color: #ffffff; 
+  color: #000000; 
+  border-radius: 25px; 
+  padding: 0px 45px;
+  font-size: 1em; 
+  font-family: "Courier New", Courier, monospace; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 5px #ffffffcc; 
+  transition: background-color 0.3s, box-shadow 0.3s;
+  position: fixed; 
+  bottom: 95px; 
+  left: 300px; 
+  transform: translateX(-50%); 
+}
+.button.back-to-control:hover {
+  background-color: #f0f0f0; 
+  box-shadow: 0 0 15px #ffffff; 
+}
